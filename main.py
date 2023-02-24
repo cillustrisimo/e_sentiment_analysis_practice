@@ -4,7 +4,7 @@ import glob
 from pathlib import Path
 from nltk.sentiment import SentimentIntensityAnalyzer
 
-# Creating a dicitionary that contains the values I need to plot
+# Creating a list that contains the values I need to plot
 files = glob.glob("sample_diary/*.txt")
 analyzer = SentimentIntensityAnalyzer()
 
