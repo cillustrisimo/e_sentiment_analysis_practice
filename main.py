@@ -7,7 +7,7 @@ from nltk.sentiment import SentimentIntensityAnalyzer
 # Creating a list that contains the values I need to plot
 files = glob.glob("sample_diary/*.txt")
 analyzer = SentimentIntensityAnalyzer()
-
+print(files)
 negativity = []
 positivity = []
 
@@ -18,7 +18,7 @@ for file in files:
     negativity.append(scores["neg"])
     positivity.append(scores["pos"])
 
-dates = [date.strip(".txt").strip('sample_diary/') for date in files]
+dates = [date.strip(".txt").strip('sample_diary\\') for date in files]
 
 # Creating the website
 st.title("Diary Tone and Sentiment Analysis")
