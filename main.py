@@ -7,7 +7,7 @@ from nltk.sentiment import SentimentIntensityAnalyzer
 # Creating a list that contains the values I need to plot
 files = glob.glob("sample_diary/*.txt")
 analyzer = SentimentIntensityAnalyzer()
-print(files)
+
 negativity = []
 positivity = []
 
